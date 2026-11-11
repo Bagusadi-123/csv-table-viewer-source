@@ -1,0 +1,19 @@
+# Dependensi & build
+node_modules/
+.next/
+out/
+
+# Database SQLite & file runtime (data, bukan kode)
+db/
+prisma/db/
+*.db
+*.db-journal
+*.part
+
+# Environment
+.env
+.env.local
+
+# Sistem
+.DS_Store
+Thumbs.db

@@ -1,0 +1,47 @@
+// Skema database CSV Table Viewer
+//
+// PENTING (untuk MySQL di komputer lokal Anda):
+// - Sandbox demo ini menggunakan SQLite, namun skema di bawah 100% kompatibel dengan MySQL.
+// - Untuk beralih ke MySQL, ubah `provider = "sqlite"` menjadi `provider = "mysql"`
+//   lalu set DATABASE_URL di file .env, contoh:
+//   DATABASE_URL="mysql://root:password@localhost:3306/csv_viewer"
+//   Setelah itu jalankan: npx prisma db push
+// - Tipe `Json` sudah didukung MySQL versi 5.7 ke atas.
+
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "mysql"
+  url      = env("DATABASE_URL")
+}
+
+// Dataset = hasil upload file CSV yang disimpan ke database
+model Dataset {
+  id         String   @id @default(cuid())
+  name       String   @unique // nama dataset (nama file atau nama custom)
+  sourceType String   @default("small") // "small" = blob JSON di kolom data; "big" = per-baris di tabel DatasetRow
+  status     String   @default("done") // "processing" | "done" | "failed" (status import file besar)
+  importError String? // pesan error jika status = "failed"
+  columns    Json     // daftar metadata kolom: [{key,isNumeric}] (big) atau ["Nama",...] (small)
+  data       Json?    // array of objects (hanya sourceType "small"; big menyimpan null)
+  rowCount   Int      // jumlah baris data
+  sizeBytes  Int?     // ukuran file asli (opsional)
+  ownerEmail String?  // email pemilik (dari login Firebase; null saat mode demo)
+  createdAt  DateTime @default(now())
+  updatedAt  DateTime @updatedAt
+
+  @@index([ownerEmail])
+}
+
+// DatasetRow = satu baris data untuk dataset besar (sourceType "big").
+// Disimpan per-baris agar filter/sort/pagination bisa diproses di sisi
+// database (MySQL) — inilah inti arsitektur big data.
+model DatasetRow {
+  id        Int    @id @default(autoincrement())
+  datasetId String
+  data      Json   // isi satu baris, mis: {"Nama":"Budi","Kota":"Jakarta"}
+
+  @@index([datasetId])
+}

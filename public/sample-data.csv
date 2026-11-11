@@ -1,0 +1,37 @@
+ID,Nama Produk,Kategori,Kota,Harga,Stok,Rating,Tanggal,Status
+PROD-001,Kopi Arabika Gayo 250g,Kopi & Teh,Jakarta,85000,120,4.8,2026-01-05,Aktif
+PROD-002,Teh Hijau Sencha 100g,Kopi & Teh,Bandung,45000,200,4.5,2026-01-08,Aktif
+PROD-003,Gula Aren Cair 500ml,Bahan Pokok,Surabaya,32000,85,4.6,2026-01-10,Aktif
+PROD-004,Beras organik 5kg,Bahan Pokok,Yogyakarta,72000,50,4.7,2026-01-12,Aktif
+PROD-005,Madu Hutan Murni 350ml,Bahan Pokok,Bali,95000,40,4.9,2026-01-15,Hampir Habis
+PROD-006,Sambal Bawang Bu Rina,Condiment,Semarang,25000,300,4.8,2026-01-18,Aktif
+PROD-007,Keripik Singkong Balado,Camilan,Medan,18000,500,4.4,2026-01-20,Aktif
+PROD-008,Kacang Almond Panggang 200g,Camilan,Jakarta,68000,90,4.6,2026-01-22,Aktif
+PROD-009,Es Kopi Susu Instan,Kopi & Teh,Jakarta,28000,150,4.3,2026-02-01,Hampir Habis
+PROD-010,Susu Kental Manis 375g,Bahan Pokok,Bandung,17000,400,4.2,2026-02-03,Aktif
+PROD-011,Saus Sambal Extra Pedas,Condiment,Surabaya,22000,250,4.5,2026-02-05,Aktif
+PROD-012,Kerupuk Udang Premium,Camilan,Sidoarjo,30000,180,4.6,2026-02-08,Aktif
+PROD-013,Teh Melati 50 Sachet,Kopi & Teh,Jakarta,24000,320,4.1,2026-02-10,Nonaktif
+PROD-014,Minyak Kelapa Virgin 500ml,Bahan Pokok,Bali,55000,60,4.7,2026-02-12,Aktif
+PROD-015,Kopi Robusta Temanggung 200g,Kopi & Teh,Temanggung,55000,110,4.5,2026-02-15,Aktif
+PROD-016,Terasi Udang Bakar 250g,Condiment,Medan,27000,75,4.4,2026-02-17,Hampir Habis
+PROD-017,Pisang Kering Manis,Camilan,Bogor,35000,95,4.3,2026-02-20,Aktif
+PROD-018,Garam Laut Bubuk 250g,Bahan Pokok,Makassar,15000,600,4.0,2026-02-22,Aktif
+PROD-019,Matcha Latte Powder 150g,Kopi & Teh,Bandung,78000,45,4.8,2026-03-01,Aktif
+PROD-020,Coklat Bubuk Premium 250g,Kopi & Teh,Jakarta,65000,70,4.7,2026-03-03,Aktif
+PROD-021,Sirup Jahe Merah 330ml,Minuman,Bandung,38000,130,4.6,2026-03-05,Aktif
+PROD-022,Air Kelapa Kemasan 350ml,Minuman,Bali,12000,800,4.2,2026-03-08,Hampir Habis
+PROD-023,Sari Kurma Murni 250ml,Minuman,Yogyakarta,48000,55,4.8,2026-03-10,Aktif
+PROD-024,Es Boba Ready-to-Mix,Minuman,Jakarta,32000,160,4.4,2026-03-12,Aktif
+PROD-025,Mie Soba Kering 300g,Makanan Instan,Jakarta,42000,140,4.5,2026-03-15,Aktif
+PROD-026,Mie Soba Kering 300g,Makanan Instan,Surabaya,42000,90,4.5,2026-03-16,Nonaktif
+PROD-027,Bihun Bebas 400g,Makanan Instan,Medan,20000,220,4.1,2026-03-18,Aktif
+PROD-028,Susu Oat Barista 1L,Minuman,Bandung,52000,80,4.6,2026-03-20,Aktif
+PROD-029,Tahu Bulat Beku 500g,Camilan,Semarang,26000,110,4.0,2026-03-22,Aktif
+PROD-030,Bawang Goreng Premium 200g,Condiment,Brebes,36000,190,4.7,2026-03-25,Aktif
+PROD-031,Sambal Ijo Padang 200g,Condiment,Padang,29000,65,4.9,2026-03-28,Hampir Habis
+PROD-032,Keju Cheddar Blok 250g,Produk Susu,Jakarta,58000,48,4.5,2026-04-01,Aktif
+PROD-033,Mentega Premium 200g,Produk Susu,Bandung,47000,52,4.4,2026-04-03,Aktif
+PROD-034,Yogurt Stroberi 120g,Produk Susu,Bogor,14000,300,4.3,2026-04-05,Aktif
+PROD-035,Granola Madu 400g,Camilan,Yogyakarta,62000,58,4.8,2026-04-08,Aktif
+PROD-036,Oatmeal Rolled 1kg,Bahan Pokok,Surabaya,54000,66,4.6,2026-04-10,Aktif
